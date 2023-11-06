@@ -20,7 +20,6 @@ import lombok.Setter;
 //Printer is a child of Equipment
 //Printer is a derived class of Equipment
 public class Printer extends Equipment {
-
     private  int printSpeed;
     private int maxPaperCapacity;
     private PrinterBrand brand=PrinterBrand.HP;
