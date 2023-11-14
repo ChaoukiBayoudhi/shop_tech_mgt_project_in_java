@@ -21,4 +21,6 @@ public class Computer extends Equipment{
     private Screen screen;
     private String battery;
     private ComputerBrand brand;
+
+    //redefinition of the print method
 }

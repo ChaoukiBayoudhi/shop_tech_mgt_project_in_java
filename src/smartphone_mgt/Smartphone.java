@@ -1,5 +1,6 @@
 package smartphone_mgt;
 
+import Equipments.Equipment;
 import details.Microprocessor;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,9 +11,8 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Smartphone {
-    private long id;
-    private String name;
-    private Microprocessor processor;
-    //....
+public class Smartphone extends Equipment {
+    private  String screen;
+    private  String camera;
+    private  String battery;
 }
