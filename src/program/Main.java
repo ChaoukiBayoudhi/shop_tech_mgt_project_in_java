@@ -18,6 +18,22 @@ public class Main {
         p1.setBrand(PrinterBrand.HP);
         p1.setPrintSpeed(100);
         p1.setType(PrinterType.LASER);
-        p1.print();
+        //p1.print();
+        System.out.println("p1 = "+p1);
+        Printer p2= new Printer();
+        p2.setId(1);
+        p2.setName("HP LaserJet");
+        p2.setPrice(1000);
+        p2.setState(EquipmentState.IN_STOCK);
+        p2.setMaxPaperCapacity(1000);
+        p2.setBrand(PrinterBrand.HP);
+         //test of Object methods
+        //System.out.println("toString() result = "+ p1.toString());
+        System.out.println("toString() result = "+ p1);
+        System.out.println("toString() result = "+ p2);
+        System.out.println("equals() result = "+ p1.equals(p2));
+        System.out.println("hashCode() result = "+ p1.hashCode());
+        System.out.println("hashCode() result = "+ p2.hashCode());
+        System.out.println("getClass() result = "+ p1.getClass());
     }
 }

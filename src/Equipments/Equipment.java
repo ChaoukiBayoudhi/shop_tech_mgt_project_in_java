@@ -26,7 +26,7 @@ public class Equipment {
     private EquipmentState state=EquipmentState.IN_STOCK;
     private int ram;
 
-    public void print(){
+    /*public void print(){
         System.out.println("id: "+id);
         System.out.println("name: "+name);
         System.out.println("price: "+price);
@@ -34,7 +34,7 @@ public class Equipment {
         System.out.println("constructor: "+constructor);
         System.out.println("state: "+state);
         System.out.println("ram: "+ram);
-    }
+    }*/
     //get the equipment attributes values from the keyboard
     public  void getProperties(){
         Scanner sc = new Scanner(System.in);
@@ -48,6 +48,11 @@ public class Equipment {
         processor.getProperties();
         System.out.print("ram capacity = ");
         ram=sc.nextInt();
+    }
+    //redefinition of toString method
+    @Override
+    public String toString(){
+        return "id: "+id+", name :  "+name+", price : "+price+", ram capacity : "+ram+", state : "+state;
     }
 
 }

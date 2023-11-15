@@ -22,5 +22,15 @@ public class Computer extends Equipment{
     private String battery;
     private ComputerBrand brand;
 
-    //redefinition of the print method
+    //redefinition of the toString method
+
+    @Override
+    public String toString() {
+        return "Computer{" +
+                super.toString()+
+                "screen=" + screen +
+                ", battery='" + battery + '\'' +
+                ", brand=" + brand +
+                "} " ;
+    }
 }

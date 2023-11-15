@@ -28,14 +28,14 @@ public class Printer extends Equipment {
     private PrinterType type=PrinterType.LASER;
 
     //redefinition of the print method
-    @Override
+    /*@Override
     public void  print(){
         super.print();//call the print method of the superclass (Equipment)
         System.out.println("printSpeed: "+printSpeed);
         System.out.println("maxPaperCapacity: "+maxPaperCapacity);
         System.out.println("brand: "+brand);
         System.out.println("type: "+type);
-    }
+    }*/
     @Override
     public void getProperties(){
         super.getProperties();//get the properties id, name, price, microprocessor and ram
@@ -47,5 +47,13 @@ public class Printer extends Equipment {
         maxPaperCapacity=sc.nextInt();
         //the same thing for brand and type
 
+    }
+    //redefinition of toString method
+    public String toString() {
+        return super.toString()+ //return the attributes values defined in Equipment
+                ", print speed : "+printSpeed+
+                ", max papers capacity : "+ maxPaperCapacity+
+                ", brand : "+ brand+
+                ", type : "+type;
     }
 }
