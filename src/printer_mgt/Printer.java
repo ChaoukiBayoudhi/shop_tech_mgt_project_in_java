@@ -6,10 +6,7 @@ import details.Microprocessor;
 import enumerations.EquipmentState;
 import enumerations.PrinterBrand;
 import enumerations.PrinterType;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Scanner;
 
@@ -17,6 +14,7 @@ import java.util.Scanner;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString(callSuper = true) //call the toString method of the superclass (Equipment)
 //Printer is a subclass of Equipment
 //Printer inherits from Equipment
 //Printer is a child of Equipment
@@ -49,11 +47,11 @@ public class Printer extends Equipment {
 
     }
     //redefinition of toString method
-    public String toString() {
-        return super.toString()+ //return the attributes values defined in Equipment
-                ", print speed : "+printSpeed+
-                ", max papers capacity : "+ maxPaperCapacity+
-                ", brand : "+ brand+
-                ", type : "+type;
-    }
+//    public String toString() {
+//        return super.toString()+ //return the attributes values defined in Equipment
+//                ", print speed : "+printSpeed+
+//                ", max papers capacity : "+ maxPaperCapacity+
+//                ", brand : "+ brand+
+//                ", type : "+type;
+//    }
 }
